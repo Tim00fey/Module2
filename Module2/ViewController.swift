@@ -7,52 +7,62 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
-    enum Color: Int{
-        case red = 0
-        case yellow = 1
-        case green = 2
-    }
+    @IBOutlet var redView: UIView!
+    @IBOutlet var yellowView: UIView!
+    @IBOutlet var greenView: UIView!
     
-    private var color: Color = .red
     
     @IBOutlet var startButton: UIButton!
-    @IBOutlet var views: [UIView]!
+    
+    private var currentColor: CurrentColor = .red
+    private let lightIsOn: CGFloat = 1
+    private let lightIsOff: CGFloat = 0.3
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         startButton.layer.cornerRadius = 7
         
-        for view in views {
-            view.layer.cornerRadius = 50
-            view.alpha = 0.3
-        }
+        redView.alpha = lightIsOff
+        yellowView.alpha = lightIsOff
+        greenView.alpha = lightIsOff
+        
+        viewWillLayoutSubviews()
     }
     
-    private func blackout(_ views: [UIView]!){
-        for view in views {
-            view.alpha = 0.3
+    override func viewWillLayoutSubviews() {
+        redView.layer.cornerRadius = redView.frame.width / 2
+        yellowView.layer.cornerRadius = yellowView.frame.width / 2
+        greenView.layer.cornerRadius = greenView.frame.width / 2
+    }
+    
+    @IBAction func startButtonTapped() {
+        if startButton.currentTitle == "START" {
+            startButton.setTitle("NEXT", for: .normal)
+        }
+        
+        switch currentColor {
+        case .red:
+            currentColor = .yellow
+            redView.alpha = lightIsOn
+            greenView.alpha = lightIsOff
+        case .yellow:
+            currentColor = .green
+            yellowView.alpha = lightIsOn
+            redView.alpha = lightIsOff
+        case .green:
+            currentColor = .red
+            greenView.alpha = lightIsOn
+            yellowView.alpha = lightIsOff
         }
     }
+}
 
-    @IBAction func startButtonDidTapped() {
-        startButton.setTitle("NEXT", for: .normal)
-        
-        switch color {
-        case .red:
-            blackout(views)
-            views[color.rawValue].alpha = 1
-            color = .yellow
-        case .yellow:
-            blackout(views)
-            views[color.rawValue].alpha = 1
-            color = .green
-        case .green:
-            blackout(views)
-            views[color.rawValue].alpha = 1
-            color = .red
-        }
+extension ViewController {
+    private enum CurrentColor {
+        case red, yellow, green
     }
 }
 

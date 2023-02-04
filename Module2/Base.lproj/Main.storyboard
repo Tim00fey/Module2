@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,70 +13,61 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Module2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Q7k-8z-8uo">
-                                <rect key="frame" x="137.5" y="100" width="100" height="400"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="kLx-cK-P5M">
+                                <rect key="frame" x="137" y="119" width="156" height="589.66666666666663"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebp-Rt-AUK">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZy-5I-hEE">
+                                        <rect key="frame" x="0.0" y="0.0" width="156" height="156"/>
                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="X1X-lA-Bmf"/>
-                                            <constraint firstAttribute="width" constant="100" id="ZdV-bc-GPV"/>
+                                            <constraint firstAttribute="width" secondItem="tZy-5I-hEE" secondAttribute="height" multiplier="1:1" id="K4s-ew-JxX"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="to0-Rr-rsu">
-                                        <rect key="frame" x="0.0" y="150" width="100" height="100"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgM-Vg-faM">
+                                        <rect key="frame" x="0.0" y="217" width="156" height="155.66666666666663"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="gND-Ab-iRK"/>
-                                            <constraint firstAttribute="height" constant="100" id="nt6-cb-m8V"/>
-                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcR-BV-alX">
-                                        <rect key="frame" x="0.0" y="300" width="100" height="100"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9G-wD-GvK">
+                                        <rect key="frame" x="0.0" y="433.66666666666663" width="156" height="156"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="HLZ-Q7-KB2"/>
-                                            <constraint firstAttribute="height" constant="100" id="VRj-G0-8IH"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
-                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seF-d4-AUQ">
-                                <rect key="frame" x="122" y="540" width="131" height="42"/>
-                                <color key="backgroundColor" red="0.36470589040000001" green="0.58039218189999997" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3I-SN-AS1">
+                                <rect key="frame" x="152" y="760" width="126" height="38"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="131" id="ATF-ks-vOs"/>
-                                    <constraint firstAttribute="height" constant="42" id="vPH-so-kdE"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="126" id="gTY-ls-1AB"/>
+                                    <constraint firstAttribute="height" constant="38" id="xuA-wX-eaz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="START"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="startButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="cTs-F9-e0D"/>
+                                    <action selector="startButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="IKf-tG-g6d"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstItem="Q7k-8z-8uo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Bx9-qm-Vwa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="seF-d4-AUQ" secondAttribute="bottom" constant="85" id="eCH-oN-8ZC"/>
-                            <constraint firstItem="Q7k-8z-8uo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eRm-RU-PHA"/>
-                            <constraint firstItem="seF-d4-AUQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="etE-z8-8ke"/>
-                            <constraint firstItem="seF-d4-AUQ" firstAttribute="top" secondItem="Q7k-8z-8uo" secondAttribute="bottom" constant="40" id="s2n-6F-kQY"/>
+                            <constraint firstItem="U3I-SN-AS1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="28Y-yR-bpy"/>
+                            <constraint firstItem="kLx-cK-P5M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YkS-U0-gMN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U3I-SN-AS1" secondAttribute="bottom" constant="100" id="ZYs-YI-4L5"/>
+                            <constraint firstItem="kLx-cK-P5M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="dOI-ZS-lTx"/>
+                            <constraint firstItem="kLx-cK-P5M" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.632684" id="jdG-dK-TN7"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="startButton" destination="seF-d4-AUQ" id="3dL-NB-7GY"/>
-                        <outletCollection property="views" destination="Ebp-Rt-AUK" collectionClass="NSMutableArray" id="1TL-Cg-JpX"/>
-                        <outletCollection property="views" destination="to0-Rr-rsu" collectionClass="NSMutableArray" id="GuX-ir-5b6"/>
-                        <outletCollection property="views" destination="mcR-BV-alX" collectionClass="NSMutableArray" id="3vF-Oc-S34"/>
+                        <outlet property="greenView" destination="X9G-wD-GvK" id="420-sK-irw"/>
+                        <outlet property="redView" destination="tZy-5I-hEE" id="zZA-c6-dbg"/>
+                        <outlet property="startButton" destination="U3I-SN-AS1" id="Bqc-Zf-cGd"/>
+                        <outlet property="yellowView" destination="PgM-Vg-faM" id="weG-h1-nPK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -85,14 +76,14 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
