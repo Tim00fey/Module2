@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     // MARK: IBOutlets
+    
     @IBOutlet var colorizedView: UIView!
     @IBOutlet var redSlider: UISlider!
     @IBOutlet var greenSlider: UISlider!
@@ -47,6 +48,7 @@ class ViewController: UIViewController {
     }
     
     // MARK: private methods
+    
     private func paintView() {
         colorizedView.backgroundColor = UIColor(red: CGFloat(redSlider.value),
                                             green: CGFloat(greenSlider.value),
